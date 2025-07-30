@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head><body>
+  <header>
+    <nav>
+      <h1>MOAZAM</h1>
+      <ul>
+        <li><a href="#introduction">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>  <main>
+    <section id="introduction" data-aos="fade-up">
+      <h2>About Me</h2>
+      <img src="profile.jpg" alt="my pic">
+      <h3>Front-End Intern</h3>
+      <p>My name is Moazam, a front-end developer intern passionate about clean design and learning JavaScript.</p>
+      <p>I am interested in front-end development with a strong foundation in HTML and CSS. Currently learning JavaScript and also growing my skills in responsive web design and tools like Figma. I'm excited to improve and contribute to real-world projects.</p>
+    </section><section id="skills" data-aos="fade-right">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span></div>
+    <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+    <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+    <div class="skill-item"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+    <div class="skill-item"><i class="fab fa-figma"></i><span>Figma</span></div>
+  </div>
+</section>
+
+<section id="projects" data-aos="zoom-in">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Restaurant Website</h3>
+    <img src="project1.jpg" alt="Restaurant Website">
+    <p>A modern and responsive restaurant website built using HTML and CSS.</p>
+    <a href="https://moazam814.github.io/resturent-website/" target="_blank">Live Demo</a>
+    |
+    <a href="https://github.com/moazam814/resturent-website" target="_blank">GitHub</a>
+  </div>
+
+  <div class="project">
+    <h3>User Registration Form</h3>
+    <img src="project2.jpg" alt="User Registration Form">
+    <p>A clean user registration form created with HTML and CSS.</p>
+    <a href="https://moazam814.github.io/user--registration--form/" target="_blank">Live Demo</a>
+    |
+    <a href="https://github.com/moazam814/user--registration--form" target="_blank">GitHub</a>
+  </div>
+
+  <div class="project">
+    <h3>Cafe Project</h3>
+    <img src="project3.jpg" alt="Cafe Project">
+    <p>A visually appealing cafe website showcasing layout and menu.</p>
+    <a href="https://moazam814.github.io/cafe-project/" target="_blank">Live Demo</a>
+    |
+    <a href="https://github.com/moazam814/cafe-project" target="_blank">GitHub</a>
+  </div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <form action="#" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="contact-info">
+    <p><strong>Name:</strong> Moazam</p>
+    <p><strong>Email:</strong> <a href="mailto:moazambscs@gmail.com">moazambscs@gmail.com</a></p>
+    <div class="social-links">
+      <a href="https://github.com/Moazam814" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/Moazam814" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 Moazam. All rights reserved.</p>
+  </footer>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>
+    AOS.init();
+
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀' : '🌙';
+    });
+  </script></body></html>
